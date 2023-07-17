@@ -76,6 +76,8 @@ section.normal {
 section.imagem {
     background-color: rgb(56, 54, 54);
     color: white;
+    display: block;
+    margin: auto;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616); /*SOMBRA INTERNA NA SECTION IMAGEM*/
     background-attachment: fixed; /*IMAGEM FIXA, EFEITO PARALLAX*/
 
