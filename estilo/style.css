@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Passion +One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Lugrasimo & display=swap') ;
+
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'Lugrasimo', cursiva;
+   
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /*TAMANHO MINIMO DO CORPO DO HTML, 100% DA ALTURA DA VH , (VW-> LARGURA)*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    
+    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+    
+    
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /* SMALL-CAPS SAO LETRAS MAISCULAS COM AS PRIMEIRAS MAIORES. [TEXT-TRANSFORM: UPPERCASE -> TODAS MAIUSCULAS, PARECE QUE ESTA GRITANDO..*/
+    
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none; /* TIRAMOS O SUBLINHADO*/
+    font-weight: bolder;  /* COLOCAMOS EM NEGRITO*/
+}
+
+header a:hover, footer a:hover {  /* HOVER -> PSEUDO-CLASSE QUE TEM COMO EFEITO, ALTERAR A ESTILIZAÇAO DE UM ELEMENTO QUANDO O PONTEIRO DO MOUSE ESTIVER EM CIMA. SEMPRE SAO APLICADOS EM BOTOES, LOGOTIPOS, IMAGENS E ETC.*/
+    text-decoration: underline; /* PASSANDO O MOUSE EM CIMA VIRA SUBLINHADO*/
+}
+
+section {
+    padding-top: 10vh;   /* COM TOP E BOTTOM EM 10VH, GANHAMOS 10% NA ALTURA DA TELA*/
+    padding-bottom: 10vh;
+    line-height: 2em; /* ESPACAMENTO DUPLO ENTRE AS FRASES*/
+    padding-left: 30px; /* COLOCAMOS AS LETRAS UM POUCO MAIS PARA DENTRO*/
+    font-family: 'Lugrasimo', cursiva;
+    
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+section.imagem {
+    background-color: rgb(56, 54, 54);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616); /*SOMBRA INTERNA NA SECTION IMAGEM*/
+    background-attachment: fixed; /*IMAGEM FIXA, EFEITO PARALLAX*/
+
+}
+
+section.imagem > p {  
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.377);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg); /* (..OS DOIS PONTOS SAO PARA VOLTAR NA PASTA ONDE ESTA A IMAGEM)*/
+    background-position: right center; /*A DIREITA E CENTRALIZADO*/
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
